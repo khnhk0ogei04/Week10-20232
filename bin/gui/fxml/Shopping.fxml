@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="585.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.ShoppingController">
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="585.0" style="-fx-background-color: #FFE5CC; -fx-background-radius: 20 20 20 20;" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="FruitShop" layoutX="79.0" layoutY="100.0" prefHeight="200.0" prefWidth="437.0">
+    <columns>
+        <TableColumn fx:id="idColumn" prefWidth="46.40002632141113" text="ID" />
+        <TableColumn fx:id="nameColumn" prefWidth="102.4000015258789" text="Name" />
+        <TableColumn fx:id="priceColumn" prefWidth="86.39996337890625" text="Price" />
+        <TableColumn fx:id="quantityColumn" prefWidth="96.0" text="Quantity" />
+        <TableColumn fx:id="originColumn" prefWidth="104.800048828125" text="Origin" />
+    </columns>
+</TableView>
+            <Button fx:id="loadShop" layoutX="79.0" layoutY="25.0" mnemonicParsing="false" onAction="#loadFruitInShop" prefHeight="41.0" prefWidth="142.0" style="-fx-background-color: #FF7B89;" styleClass="button-Shopping" stylesheets="@style.css" text="LOAD DATA FRUIT" textFill="#2d2852">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

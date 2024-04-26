@@ -1,0 +1,27 @@
+.button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 20px 20px 20px 20px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-opacity: 0.8;
+}
+.imageViewAddFruit {
+    -fx-background-color: yellow;
+    -fx-background-radius: 50%;
+    -fx-cursor: hand;
+}
+.sidebar-gradient {
+    -fx-background-color: linear-gradient(to bottom, #33539E, #E8B7D4);
+}
+.button-Shopping {
+    -fx-background-image: url("../view/menu.png");
+}
+.order-gradient{
+	-fx-background-color: linear-gradient(to right, #33539E, #E8B7D4);
+	-fx-background-radius: 20px 20px 20px 20px;
+}
+
+
+
